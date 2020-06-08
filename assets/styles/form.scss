@@ -1,0 +1,166 @@
+
+.form-wrap{
+	padding: 15px 22px 37px 22px;
+	border: 1px solid #2d2d30;
+	background: linear-gradient(-180deg, #1e1e1e, #17161a);
+	max-width: 650px;
+	box-sizing: border-box;
+	position: relative;
+	top: 20px;
+	margin: 0 auto;
+
+	& > .title-form{
+		font-size: 27px;
+		color: #dfdfdf;
+		font-family: 'oswald-light';
+		padding: 0px 0px 10px 0px;
+		margin-bottom: 13px;
+		border-bottom: 1px ridge #7e7d7d;
+		letter-spacing: 2px;
+		text-shadow: 1px 1px 1px #505050;
+	}
+
+	& > .form{
+		width: 100%;
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		padding: 27px 0px 0px 0px;
+
+		& > .line-form{
+			width: 49%;
+			padding: 0px 0px 10px 0px;
+
+			.title-field-form{
+				font-size: 12px;
+				font-family: sans-serif;
+				color: #c5c5c5;
+			}
+
+			& > .fill-form-field{
+				width: 100%;
+				outline: lightpink;
+				color: #f2f2f2;
+				font-size: 14px;
+				font-family: sans-serif;
+				border-top: unset;
+				border-left: unset;
+				border-right: unset;
+				border-bottom: 1px solid #a8a7b9;
+				background: unset;
+				padding: 4px 0px 0px 0px;
+			}
+		}
+	}
+/*Buttons block Start*/
+& > .wrap-form-btns{
+		display: flex;
+		flex-direction: column;
+
+	/*Checkbox Form Start*/
+	& > .checkbox-form{
+			padding: 27px 0px 46px 0px;
+
+		/*Checkbox Style Start*/
+		& > .checkbox-style{
+				position: absolute; // take it out of document flow
+				opacity: 0; // hide it
+
+			& + label{
+					position: relative;
+					cursor: pointer;
+					padding: 0;
+			}
+
+			// Box.
+			& + label:before{
+					content: '';
+					margin-right: 10px;
+					display: inline-block;
+					vertical-align: text-top;
+					width: 18px;
+					height: 18px;
+					background: #2c2343;
+					border: 1px solid #352e48;
+			}
+
+			// Box hover
+			&:hover + label:before{
+				background: #f35429;
+			}
+
+			// Box focus
+			&:focus + label:before{
+				box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+			}
+
+			// Box checked
+			&:checked + label:before{
+				background: #443866;
+			}
+
+			// Disabled state label.
+			&:disabled + label{
+				color: #b8b8b8;
+				cursor: auto;
+			}
+
+			// Disabled box.
+			&:disabled + label:before{
+				box-shadow: none;
+				background: #ddd;
+			}
+
+			// Checkmark. Could be replaced with an image
+			&:checked + label:after{
+				content: '';
+				position: absolute;
+				left: 5px;
+				top: 9px;
+				background: white;
+				width: 2px;
+				height: 2px;
+				box-shadow: 2px 0 0 white,
+				4px 0 0 white,
+				4px -2px 0 white,
+				4px -4px 0 white,
+				4px -6px 0 white,
+				4px -8px 0 white;
+				transform: rotate(45deg);
+			}
+		}
+		/*Checkbox Style End*/
+
+		& > .signature-checkbox{
+				color: #e0e0e0;
+				font-size: 15px;
+				font-family: 'roboto';
+		}
+	}
+	/*Checkbox Form End*/
+
+	& >.btn-form{
+			position: absolute;
+			right: 22px;
+			bottom: 19px;
+			padding: 10px 35px 10px 35px;
+			border-radius: 2px;
+			border: 1px solid #2e2542;
+			background: #1f192e;
+			cursor: pointer;
+			color: #cacaca;
+			font-weight: bold;
+			font-family: 'roboto';
+	}
+
+	& >.btn-form:hover{
+			background: #302748;
+	}
+}
+/*Buttons block End*/
+}
+
+
+
+

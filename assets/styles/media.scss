@@ -1,0 +1,29 @@
+@media  screen and ( max-width :414px ) {
+
+	.form-wrap > .title-form{
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.form-wrap > .form {
+		width: 100%;
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 27px 0px 0px 0px;
+	}
+	.form-wrap > .form > .line-form{
+		width: 100%;
+		text-align: center;
+		padding: 0px 0px 20px 0px;
+	}
+
+	input::placeholder{
+		text-align: center;
+	}
+
+	.form-wrap > .form > .line-form > .fill-form-field{
+		text-align: center;
+	}
+}
